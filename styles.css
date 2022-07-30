@@ -93,7 +93,9 @@ li button {
 }
 
 .block {
-    border: 5px red solid;
+    border-width: 4px;
+    border-color: #FF0000;
+    border-style: solid;
     padding: 10px;
     background-color: black;
     border-radius: 0r%;
@@ -181,11 +183,12 @@ li button {
     gap: 0.5rem;
 }
 
-#range1 {
+#range1, #range2 {
     appearance: none;
-    width: 500px;
-    height: 100px;
+    width: 11rem;
+    height: 1rem;
     background: red;
     cursor: pointer;
 }
 
+s

@@ -1,6 +1,6 @@
 
 const colors = {};
-const gridSize = 29;
+let gridSize = 29;
 const DIV = {};
 DIV.events = [];
 DIV.container = document.querySelector("#drawing-canvas");
@@ -9,6 +9,8 @@ BLOCKS = {};
 //nameing format is row # block # = r1b1
  let myLabel = "";
 let rowLabel = "";
+
+function makeGrid() {
 
 for (let row = 1; row <= gridSize; row++) {
 
@@ -31,6 +33,10 @@ for (let row = 1; row <= gridSize; row++) {
     DIV.container.appendChild(DIV[rowLabel]);
 
 }
+}
+makeGrid();
+
+
 
 let bgColorBox1 = document.querySelector("#colorPicker")
 let bgColorChange = bgColorBox1.addEventListener("change", (e) => {
@@ -45,7 +51,43 @@ let bgColorChange = bgColorBox1.addEventListener("change", (e) => {
 })
 
 
+let range1value = document.querySelector("#range1");
+let range2value = document.querySelector("#range2");
 
+let rangeset = range1value.addEventListener("change", () => {
+function getBlockBorder() {
+let range = range1value.value;
+if (parseInt(range) > 6) {
+    range = "6";
+}
+range = range + "px"
+
+for (let i in BLOCKS){
+    BLOCKS[i].style.borderWidth = range;
+} 
+}
+
+getBlockBorder();
+});
+
+
+let canvasSize = range2value.addEventListener("change", ()=> {
+    let cSize = range2value.value;
+    if (parseInt(cSize) > 50) {
+        cSize = "50";
+    }
+    gridSize = cSize;
+    let response ="";
+    if (confirm("If you change the size, your work will be lost.\nAre you sure?") === true) {
+        DIV.container.innerHTML = "";
+        makeGrid();
+    } else {
+      return null;   
+    }
+    
+    
+}
+)
 
 
 let cArray = ["red", "blue", "green", "black", "white", "yellow", "orange", "indigo", "pink"];
@@ -109,6 +151,7 @@ function startPainting(classname) {
 for (let item in BLOCKS) {
     
     function paint(){
+        BLOCKS[item].className = "block";
         BLOCKS[item].classList.add(classname);
     }
     
