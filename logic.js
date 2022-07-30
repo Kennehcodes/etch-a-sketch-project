@@ -133,13 +133,17 @@ function startPaintingViaClick(classname) {
     for (let item in BLOCKS) {
         
         function paint(){
+            BLOCKS[item].className = "block";
             BLOCKS[item].classList.add(classname);
+            
         }
         
        
         BLOCKS[item].addEventListener("mouseover", paint) 
 
+
     
+
         document.addEventListener("dblclick", () => {
             BLOCKS[item].removeEventListener("mouseover", paint)
     

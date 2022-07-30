@@ -180,3 +180,12 @@ li button {
 .inp {
     gap: 0.5rem;
 }
+
+#range1 {
+    appearance: none;
+    width: 500px;
+    height: 100px;
+    background: red;
+    cursor: pointer;
+}
+
