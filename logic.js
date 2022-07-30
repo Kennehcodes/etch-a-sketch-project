@@ -97,13 +97,13 @@ for (let c in cArray) {
     let search = ".bt" + kArray[c];
     let currColor = cArray[c];
     colors[currColor] = document.querySelector(search);
-    colors[currColor].addEventListener("click", () => { startPaintingViaClick(currColor)})
+    colors[currColor].addEventListener("touchstart", () => { startPaintingViaClick(currColor)})
 
 }
 
 let space = document.querySelector(".space");
 
-space.addEventListener("click", () => {
+space.addEventListener("touchstart", () => {
     clear();
 })
 
@@ -156,12 +156,12 @@ for (let item in BLOCKS) {
     }
     
    
-    BLOCKS[item].addEventListener("mouseenter", paint) 
+    BLOCKS[item].addEventListener("touchenter", paint) 
     
     // document.addEventListener("keydown", erase);
 
-    document.addEventListener("click", () => {
-        BLOCKS[item].removeEventListener("mouseenter", paint)
+    document.addEventListener("touchstart", () => {
+        BLOCKS[item].removeEventListener("touchenter", paint)
 
     })
     
@@ -182,13 +182,13 @@ function startPaintingViaClick(classname) {
         }
         
        
-        BLOCKS[item].addEventListener("mouseover", paint) 
+        BLOCKS[item].addEventListener("touchenter", paint) 
 
 
     
 
-        document.addEventListener("dblclick", () => {
-            BLOCKS[item].removeEventListener("mouseover", paint)
+        document.addEventListener("touchend", () => {
+            BLOCKS[item].removeEventListener("touchenter", paint)
     
         })
         
