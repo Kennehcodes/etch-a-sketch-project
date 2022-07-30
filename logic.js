@@ -32,11 +32,12 @@ for (let row = 1; row <= gridSize; row++) {
 
 }
 
-let bgColorBox1 = document.querySelector("#form")
-let bgColorChange = bgColorBox1.addEventListener("submit", (e) => {
+let bgColorBox1 = document.querySelector("#colorPicker")
+let bgColorChange = bgColorBox1.addEventListener("change", (e) => {
 
     e.preventDefault();
-    let colorChange = (e.target.children.colorPicker.value);
+    let colorChange = (e.target.value);
+    console.log(colorChange)
     DIV.container.style.borderColor = colorChange;
     for (let i in BLOCKS){
         BLOCKS[i].style.borderColor = colorChange;

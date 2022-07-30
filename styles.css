@@ -155,3 +155,28 @@ li button {
     width: 3rem;
     height:3rem;
 }
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.bor 
+{
+    border: 2px green solid;
+
+}
+.htext 
+{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.inp {
+    gap: 0.5rem;
+}
