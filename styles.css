@@ -1,0 +1,157 @@
+body, html {
+    margin:0 ;
+    padding: 0;
+}
+.header, .container{
+    display: flex;
+    
+}
+
+.header {
+    margin: 0;
+    background-color: rgb(196, 196, 196);
+    border-style: solid;
+    border-spacing: 1px;
+    border-width: 10px;
+    border-color: rgb(153, 153, 153);
+    box-shadow: 5px 5px black;
+}
+.mainContent {
+       display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+    margin-top: 2rem;
+
+}
+.tbli, .tbul {
+    padding:0;
+    margin: 0;
+}
+
+.tbh {
+    background-color: grey;
+}
+
+.tbh, .tbred {
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    
+}
+.tbul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tbl {
+    border: 2px black solid;
+    box-shadow:  3px 2px red;
+    padding: 0rem;
+    width: 3rem;
+    margin: 1rem;
+    text-align: center;
+}
+.tbs {
+    border: 2px black solid;
+    box-shadow:  3px 2px red;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+li button {
+    background-color: rgba(0, 0, 0, 0) ;
+    width: fit-content;
+    padding: 1rem;
+    border: none;
+}
+
+
+.toolbar {
+    border: 5px solid #000;
+    box-shadow:  3px 2px red;
+    padding: 0;
+    background-color: lightgray;
+}
+
+
+.container {
+    border-style: solid;
+    border-size: 12px;
+    border-color:  pink;
+    box-shadow:  15px 15px red;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+}
+.header {
+    flex-direction: column;
+}
+
+.block {
+    border: 5px red solid;
+    padding: 10px;
+    background-color: black;
+    border-radius: 0r%;
+    margin: 0;
+}
+
+.row {
+ 
+}
+
+.hover {
+    background-color: blue;
+    transition: background-color 0.2  1s ;
+    transition-timing-function: linear ;
+}
+
+.red, .tbred, .btR {
+    background-color: #FF0000;
+}
+
+.green, .tbgreen, .btG {
+    background-color: #00FF00;
+}
+
+.blue, .tbblue, .btB {
+    background-color: #0000FF;
+}
+.black, .tbblack, .btK {
+    background-color: black;
+    color: white;
+}
+
+.yellow, .tbyellow, .btY {
+    background-color: yellow;
+}
+.orange, .tborange, .btO {
+    background-color: orange;
+}
+.white, .tbwhite, .btW {
+    background-color: white;
+}
+.pink, .tbpink, .btP {
+    background-color: pink;
+}
+.indigo, .tbindigo, .btI {
+    background-color: indigo;
+    color: white;
+}
+
+.flexli {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style: none;
+    padding: 0.75rem;
+}
+
+#colorPicker {
+    width: 3rem;
+    height:3rem;
+}
