@@ -187,6 +187,10 @@ button {
 .btY:hover {
     color: yellow;
 }
+.tborange:hover,
+.btO:hover  {
+    color: orange;
+}
 
 .orange,
 .tborange,
