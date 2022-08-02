@@ -32,13 +32,15 @@ html {
 
 .tbli,
 .tbul {
+    contain: content;
     padding: 0;
     margin: 0;
 }
 
 .tbh {
     background-color: grey;
-    width: 4rem;
+    width: 100%;
+    
     text-align: center;
 }
 
@@ -394,6 +396,7 @@ h1 {
     gap: 1rem;
 }
 
+
 .rnavitem a {
     color: darkblue;
 }
@@ -409,4 +412,10 @@ h1 {
 
 .help:active {
     background-color: white;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    z-index: 10;
 }
