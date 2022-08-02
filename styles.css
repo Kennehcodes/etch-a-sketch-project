@@ -5,8 +5,10 @@ html {
 
   }
 
-.header,
-.container {
+
+.container, .mainContent, .tbul, .rnavitem, .flexbox, 
+.flex-col, 
+.flex, .flexli  {
     display: flex;
 }
 
@@ -21,7 +23,7 @@ html {
 }
 
 .mainContent {
-    display: flex;
+
     justify-content: center;
     
     gap: 6%;
@@ -51,7 +53,6 @@ html {
 
 .tbul {
     list-style: none;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -231,7 +232,7 @@ button {
 }
 
 .flexli {
-    display: flex;
+
     justify-content: space-between;
     align-items: baseline;
     list-style: none;
@@ -245,12 +246,12 @@ button {
 }
 
 .flex {
-    display: flex;
+
     justify-content: center;
 }
 
-.flex-col {
-    display: flex;
+.flex-col  {
+
     flex-direction: column;
     padding: 4px;
 }
@@ -323,9 +324,7 @@ h3 {
     font-family: "Press Start 2P", monospace;
 }
 
-.flexbox {
-    display: flex;
-}
+
 
 .htext {
     font-size: 0.7rem;
@@ -393,7 +392,6 @@ h1 {
 }
 
 .rnavitem {
-    display: flex;
     align-items: center;
     gap: 1rem;
 }
@@ -422,10 +420,52 @@ header {
     z-index: 10;
 }
 
+.dot {
+    color: magenta;
+    background-color: lime;
+    width: 4rem;
+    height: 4rem;
+    z-index: 100;
+  position: absolute;
+  transform: translate(-50%, -50%); 
+}
+
 @media (max-width: 550px) {
+    
+    
+
     body {
+        width: 100%;
         background-color: blue;
+        display: flex;
+        flex-direction: column;
     }
+
+    .header,
+    .container, .mainContent, .tbul, .rnavitem, .flexbox, 
+    .flex-col, 
+    .flex, .flexli  {
+
+padding: 0;
+margin: 0;
+gap: 0;
+    }
+    
+    .header{
+        contain: content;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+ 
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+
 
     .popup {
         margin: 0;
@@ -434,12 +474,62 @@ header {
     }
 
     .mainContent {
-      
       flex-wrap: wrap;
-        display: flex; }
+        display: flex; 
+    }
 
 
         .tbul {
             flex-direction: row;
         }
+    
+    
     }
+
+.newCont {
+    background-color: yellow;
+   }
+
+
+.newNav {
+   background-color: #0000ff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4%;
+}
+
+
+
+
+.newMain {
+    display:flex;
+    justify-content: space-around;
+    gap: 2rem;
+    
+}
+
+.newCanvas {
+    align-self: center;
+    margin-right: 30%;
+}
+
+
+.toolNavUL, .newHelpUL, .tools {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    background-color: green;
+}
+
+.smallTool {
+    margin: 10px;
+}
+
+.tools {
+    
+    contain: content;
+    align-self: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

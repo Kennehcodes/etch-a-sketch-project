@@ -98,20 +98,11 @@ for (let c in cArray) {
   colors[currColor].addEventListener("click", () => {
     startPaintingViaClick(currColor);
   });
-  colors[currColor].addEventListener("touchstart", () => {
-    startPaintingViaClick(currColor);
-    console.log("um");});
 
-    colors[currColor].addEventListener("touchmove", () => {
-        startPaintingViaClick(currColor);
-        console.log("move")
-    
-  });
-  colors[currColor].addEventListener("touchend", () => {
-    startPaintingViaClick(currColor);
-    console.log("endgit")
 
-});
+ 
+
+
 }
 
 let space = document.querySelector(".space");
@@ -171,11 +162,14 @@ function startPainting(classname) {
 
     // document.addEventListener("keydown", erase);
 
+
+
+
     document.addEventListener("click", () => {
       BLOCKS[item].removeEventListener("mouseenter", paint);
     });
-  }
-}
+
+}}
 
 function startPaintingViaClick(classname) {
   for (let item in BLOCKS) {
@@ -216,3 +210,48 @@ function makeRowLabel(number) {
 }
 
 
+
+
+
+  for (let m in cArray) {
+    let tSearch = ".bt" + kArray[m];
+    let touchCurrColor = cArray[m];
+    colors[touchCurrColor] = document.querySelector(tSearch);
+    colors[touchCurrColor].addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        console.log("ev1")
+      startPaintingViaTouch(touchCurrColor);
+    });
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
+function startPaintingViaTouch(classname) {
+    for (let item in BLOCKS) {
+      function paint(e) {
+        e.preventDefault();
+        BLOCKS[item].className = "block";
+        BLOCKS[item].classList.add(classname);
+        console.log("tough")
+      }
+  
+      BLOCKS[item].addEventListener("touchmove", paint);
+  
+      BLOCKS[item].addEventListener("touchend", () => {
+        BLOCKS[item].removeEventListener("touchstart", paint);
+      });
+      BLOCKS[item].addEventListener("touchcancel",() => {
+        BLOCKS[item].removeEventListener("touchstart", paint);
+      });
+
+  }
+}
