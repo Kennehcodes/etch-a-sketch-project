@@ -1,5 +1,5 @@
 const colors = {};
-let gridSize = 29;
+let gridSize = 22;
 const DIV = {};
 DIV.events = [];
 DIV.container = document.querySelector("#drawing-canvas");
