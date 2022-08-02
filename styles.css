@@ -61,8 +61,8 @@ html {
     border: 2px black solid;
     box-shadow: 3px 2px red;
     padding: 0rem;
-    width: 3rem;
-    margin: 0.5rem;
+    width: 2rem;
+    margin: 4px;
     text-align: center;
 }
 
@@ -83,7 +83,7 @@ html {
 li button {
     background-color: rgba(0, 0, 0, 0);
     width: fit-content;
-    padding: 1rem;
+    padding: 7.5px;
     border: none;
 }
 
