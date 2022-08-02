@@ -14,9 +14,23 @@
 <header class="newNav">
     <nav class="newToolNav">
         <ul class="toolNavUL">
-        <li class="smallTool">Color</li>
-        <li class="smallTool">Size</li>
-        <li class="smallTool">Second size</li>
+        <li class="smallTool">
+            <form id="form" class="new-flex-form-item">
+                 <input id="colorPicker" type="color" name="colorPicker" />
+                 <label for="colorPicker">Border&nbsp;Color</label>
+                </form>
+        </li>
+        <li class="smallTool">
+            <div class="new-flex-form-item"><input type="range" id="range1" name="range1" min="0" max="6" />
+            <label for="range1">Border Size</label>
+            </div>
+        </li>
+        <li class="smallTool">
+            <div class="new-flex-form-item">
+                <input type="range" id="range2" name="range2" min="1" max="100" />
+                <label for="range2">Canvas Size</label>
+            </div>
+        </li>
         </ul>
     </nav>
     <nav class="newHelpNav">
@@ -27,23 +41,20 @@
     </nav>
 </header>
 <main class="newMain"> 
-    <div>
-       
         <ul class="tools">
             <li> <h3>Tools</h3></li>
-            <li><button>R</button></li>
-            <li><button>O</button></li>
-            <li><button>Y</button></li>
-            <li><button>G</button></li>
-            <li><button>B</button></li>
-            <li><button>I</button></li>
-            <li><button>P</button></li>
-            <li><button>W</button></li>
-            <li><button>K</button></li>
-            <li><button>Space</button></li>
+            <li><button class="btR">R</button></li>
+            <li><button class="btO">O</button></li>
+            <li><button class="btY">Y</button></li>
+            <li><button class="btG">G</button></li>
+            <li><button class="btB">B</button></li>
+            <li><button class="btI">I</button></li>
+            <li><button class="btP">P</button></li>
+            <li><button class="btW">W</button></li>
+            <li><button class="btK">K</button></li>
+            <li><button class="space">Space</button></li>
         </ul>
-    </div>
-    <div class="newCanvas">maincanvas</div>
+    <div class="newCanvas" id="drawing-canvas">maincanvas</div>
 </main>
 
 </div>

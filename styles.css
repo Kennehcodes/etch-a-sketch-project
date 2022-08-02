@@ -492,25 +492,28 @@ gap: 0;
 
 
 .newNav {
-   background-color: #0000ff;
+   background-color: rgb(196, 196, 196);
+   border-style: solid;
     display: flex;
-    justify-content: space-evenly;
-    padding: 4%;
+    border-spacing: 1px;
+    border-width: 10px;
+    box-shadow: 5px 5px black;
+    justify-content: space-between;
+    padding: 1%;
+
+
+
 }
-
-
+.newToolNav,.newHelpNav {
+   
+}
 
 
 .newMain {
     display:flex;
     justify-content: space-around;
-    gap: 2rem;
-    
-}
 
-.newCanvas {
-    align-self: center;
-    margin-right: 30%;
+    
 }
 
 
@@ -518,7 +521,6 @@ gap: 0;
     display: flex;
     padding: 10px;
     list-style: none;
-    background-color: green;
 }
 
 .smallTool {
@@ -526,10 +528,86 @@ gap: 0;
 }
 
 .tools {
-    
+    font-weight: 600;
+    border: 5px solid black;
+    color: white;
+    padding: 5px;
+    background-color: grey;
     contain: content;
     align-self: flex-start;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+.new-flex-form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+#range2, #range1 {
+    width: 100%;
+}
+
+.toolNavUL {
+    width: 100%;
+    gap: 10%;
+    justify-content: space-evenly;
+}
+
+.btR, .btO, .btY, .btG, .btB, .btI,
+.btP, .btW, .btK, .space {
+    border: 2px black solid;
+    padding: 12.5px 15px ;
+    margin: 4px;
+    
+}
+
+
+.btR, .btO, .btY, .btG, .btB, .btI,
+.btP, .btW, .btK, .space, .tools {
+box-shadow: 3px 2px red;
+}
+
+
+.newCanvas {
+    align-self: center;
+    flex-basis: 0;
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 5;
+
+}
+
+.tools {
+    flex: 0 1 1;
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: peru;
+    }
+    .newMain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+    .tools {
+        margin: 0;
+        align-self: stretch;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+.btR, .btO, .btY, .btG, .btB, .btI,
+.btP, .btW, .btK, .space, .tools {
+    padding: 7px;
+flex: 1 0 1;}
 }
