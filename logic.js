@@ -107,9 +107,9 @@ for (let c in cArray) {
         console.log("move")
     
   });
-  olors[currColor].addEventListener("touchend", () => {
+  colors[currColor].addEventListener("touchend", () => {
     startPaintingViaClick(currColor);
-    console.log("end")
+    console.log("endgit")
 
 });
 }
