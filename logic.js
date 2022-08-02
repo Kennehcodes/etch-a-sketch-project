@@ -98,6 +98,20 @@ for (let c in cArray) {
   colors[currColor].addEventListener("click", () => {
     startPaintingViaClick(currColor);
   });
+  colors[currColor].addEventListener("touchstart", () => {
+    startPaintingViaClick(currColor);
+    console.log("um");});
+
+    colors[currColor].addEventListener("touchmove", () => {
+        startPaintingViaClick(currColor);
+        console.log("move")
+    
+  });
+  olors[currColor].addEventListener("touchend", () => {
+    startPaintingViaClick(currColor);
+    console.log("end")
+
+});
 }
 
 let space = document.querySelector(".space");
