@@ -196,15 +196,20 @@ function startPaintingViaClick(classname) {
     }
     
     
+let closeX = document.querySelector("#popupClose");
+let popup = document.querySelector("#popup");
+
+closeX.addEventListener("click", () => {
+popup.classList.add("pophide");
+})
 
 
+let help = document.querySelector("#help");
 
+help.addEventListener('click', () => {
 
-
-
-
-
-
+popup.classList.remove("pophide");
+})
 
 //creates a label for the grids, takes in two numbers and returns a string
 function makeBlockLabel(number1, number2) {
