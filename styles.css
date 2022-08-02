@@ -3,7 +3,7 @@ html {
     margin: 0;
     padding: 0;
 
-}
+  }
 
 .header,
 .container {
@@ -15,7 +15,7 @@ html {
     background-color: rgb(196, 196, 196);
     border-style: solid;
     border-spacing: 1px;
-    border-width: 5px;
+    border-width: 10px;
     border-color: rgb(153, 153, 153);
     box-shadow: 5px 5px black;
 }
@@ -23,9 +23,9 @@ html {
 .mainContent {
     display: flex;
     justify-content: center;
-    width: 100%;
-    gap: 1rem;
-    margin-top: 0.5rem;
+    
+    gap: 6%;
+    margin-top: 1rem;
 }
 
 .tbli,
@@ -75,6 +75,7 @@ html {
 }
 
 
+
 .space:hover {
     color: rgba(0, 0, 0, 0);
 }
@@ -122,8 +123,6 @@ button {
     border-radius: 0;
     margin: 0;
 }
-
-.row {}
 
 .hover {
     background-color: blue;
@@ -237,7 +236,7 @@ button {
     align-items: baseline;
     list-style: none;
     margin: 0;
-    padding: 0.75rem;
+    padding: 0srem;
 }
 
 #colorPicker {
@@ -253,7 +252,7 @@ button {
 .flex-col {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 4px;
 }
 
 .bor {
@@ -262,7 +261,7 @@ button {
 
 .htext {
     font-weight: 600;
-    margin: 0.1rem;
+    margin: 3px;
     font-size: 1.3em;
 }
 
@@ -293,8 +292,8 @@ button {
 
 #range1,
 #range2 {
-    width: 11rem;
-    height: 1rem;
+    width: 100px;
+    height: 30px;
 
     cursor: pointer;
 }
