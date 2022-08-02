@@ -3,8 +3,6 @@ html {
     margin: 0;
     padding: 0;
 
-    max-width: 100vw;
-    max-height: 100vh;
 }
 
 .header,
@@ -17,7 +15,7 @@ html {
     background-color: rgb(196, 196, 196);
     border-style: solid;
     border-spacing: 1px;
-    border-width: 10px;
+    border-width: 5px;
     border-color: rgb(153, 153, 153);
     box-shadow: 5px 5px black;
 }
@@ -26,8 +24,8 @@ html {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 3rem;
-    margin-top: 1rem;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .tbli,
@@ -75,6 +73,7 @@ html {
     margin: 0.5rem;
     text-align: center;
 }
+
 
 .space:hover {
     color: rgba(0, 0, 0, 0);
