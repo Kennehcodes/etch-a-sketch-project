@@ -5,6 +5,9 @@ Etch A Sketch allows for pixelated sketching as one desires, with options to adj
 
 **Link to project:** https://etch-a-sketch.mackenziedev.com/
 
+<p align="center">
+<img src="https://github.com/mac-kenzie-lee/etch-a-sketch-project/blob/main/etchasketch.gif?raw=true" alt="Etch a sketch demo">
+</p>
 
 
 ## How It's Made:
